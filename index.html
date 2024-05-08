@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula semana 01 - módulo 2</title>
+  </head>
+  <body>
+    <h2>========= Campos de texto =========</h2>
+    <!-- Todas as tags h1 ate h6 são tags em bloco, isso significa que elas ocupam 
+      toda a largura da tela, ou seja, elas sempre vão para a linha de baixo. -->
+    <h1>Exemplo de texto h1</h1>
+    <h2>Exemplo de texto h2</h2>
+    <h3>Exemplo de texto h3</h3>
+    <h4>Exemplo de texto h4</h4>
+    <h5>Exemplo de texto h5</h5>
+    <h6>Exemplo de texto h6</h6>
+
+    <!-- Já existem tags que são inline, ou seja, elas não ocupam toda a largura da tela -->
+    <p>Exemplo de texto tag p</p>
+    <span>Exemplo de texto tag span</span>
+
+    <strong>Exemplo de texto tag strong</strong>
+    <i>Exemplo de texto tag i </i>
+    <a href="https://www.google.com.br/">Acesse aqui o Google</a>
+    <br />
+    <br />
+    <br />
+
+    <hr />
+    <!-- Tag usada para criar uma linha horizontal -->
+    <h2>========= Tags de mídia =========</h2>
+    <img
+      src="./image/bandana.png"
+      alt="imagem da bandana da beyonce para promover o album cowboy carter"
+    />
+    <!-- src - serve para adicionar o caminho da imagem na tag -->
+    <!-- alt - descrição da imagem, muito usado para deficientes visuais -->
+    <br />
+    <br />
+    <br />
+    <hr />
+    <h2>========= Tags de formulário =========</h2>
+    <!-- Formulários são usados para coletar informações do usuário -->
+    <!-- A tag form é usada para criar um formulário -->
+    <form action="" method="">
+      <div>
+        <label for="nome">Digite o seu nome: </label>
+        <!-- O atributo for é usado para associar o label ao input, isso faz 
+          com que ao clicar no label o input seja selecionado -->
+        <br />
+        <!-- Para fazer o efeito de associar o label ao input, basta colocar 
+          o id do input igual ao for do label -->
+        <input type="text" id="nome" name="nome" />
+        <!-- O atributo name é usado para identificar o campo no formulário -->
+      </div>
+      <br />
+      <!-- Outros exemplos de campos de formulários -->
+      <div>
+        <label for="email">Digite o seu email: </label> <br />
+        <input type="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Digite a sua senha: </label> <br />
+        <input type="password" id="password" />
+      </div>
+      <br />
+      <div>
+        <label for="date">Digite a sua data de nascimento: </label> <br />
+        <input type="date" id="date" />
+      </div>
+      <br />
+      <div>
+        <label for="termosDeCondicao">
+          <input type="checkbox" id="termosDeCondicao" /> Declaro que li e
+          concordo com os termos de condição
+        </label>
+      </div>
+      <br />
+      <div>
+        <label for="cidade">Select</label> <br />
+        <!-- O campo select é usado para criar um campo de seleção de opções pre-criadas -->
+        <select name="cidade" id="cidade">
+          <option value="">Excolha uma das opções</option>
+          <option value="PE">Pernambuco</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="TO">Tocantins</option>
+          <option value="CE">Ceará</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Digite o que está achando do conteudo</label> <br />
+        <!-- o campo textarea é mais recomendado para textos grandes -->
+        <textarea name="opniao"></textarea>
+      </div>
+      <!-- Em uma tag button o atributo type é recomendado e ele influencia 
+        no comportamento do botão dentro do formulário -->
+      <button type="submit">Enviar</button>
+      <!-- type submit envia o formulário -->
+      <button type="reset">Apagar</button>
+      <!-- type reset limpa o formulário -->
+      <br />
+    </form>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <h2>========= Tabela e lista =========</h2>
+    <p>Lista de pessoas</p>
+    <!-- Os atributos border e cellspacing são usados para adicionar 
+      borda e espaçamento na tabela, eles são mais voltados para estilização. -->
+    <table border="1" cellspacing="0">
+      <!-- A tag thead é usada para criar o cabeçalho da tabela -->
+      <thead>
+        <tr>
+          <!-- A tag tr é usada para criar uma linha na tabela -->
+          <th>Nome</th>
+          <!-- A tag th é usada para criar uma célula no cabeçalho -->
+          <th>Sobrenome</th>
+          <th>Idade</th>
+          <th>Data de aniversário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- A tag tbody é usada para criar o corpo da tabela -->
+        <tr>
+          <!-- A tag tr é usada para criar uma linha na tabela -->
+          <td>Raquel</td>
+          <!-- A tag td é usada para criar uma célula no corpo da tabela -->
+          <td>Bastos</td>
+          <td>25</td>
+          <td>25/12/1995</td>
+        </tr>
+        <tr>
+          <td>Thiago</td>
+          <td>Fernando</td>
+          <td>25</td>
+          <td>25/12/1995</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <!-- Listas -->
+    <p>Lista material escolar</p>
+    <ol>
+      <!-- A tag ol é usada para criar uma lista ordenada, normalmente ela é numerada -->
+      <li>lapis</li>
+      <li>caneta</li>
+      <li>borracha</li>
+    </ol>
+    <p>Lista não ordenada</p>
+    <ul>
+      <!-- A tag ul é usada para criar uma lista não ordenada, normalmente ela vem com um marcador (em bolinha) -->
+      <li>lapis</li>
+      <li>caneta</li>
+      <li>borracha</li>
+    </ul>
+    <br />
+  </body>
+</html>
