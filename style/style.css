@@ -1,0 +1,87 @@
+/* seletor por tag */
+span {
+  color: blue;
+}
+
+/* seletor por id */
+#span {
+  color: red;
+}
+
+/* seletor por classe */
+.span {
+  color: green;
+}
+
+/* seletor por atributo */
+input[type="text"] {
+  color: peru;
+}
+
+/* ==================================================== */
+
+/*CSS na prática, qual a estilização ele irá pegar? 1,2 ou 3 */
+/* 1 */
+span {
+  color: #ff6600;
+}
+/* 2 */
+div#test span {
+  color: green;
+}
+/* 3 */
+div span {
+  color: blue;
+}
+
+/* ==================================================== */
+.title {
+  color: #f4bce0; /* Setar a cor do texto */
+  font-size: 32px; /* Setar o tamanho da fonte */
+}
+
+.subtitle {
+  color: #f4bce0;
+  font-size: 24px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif; /* Setar a fonte padrão */
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Praticando CSS e suas propriedades */
+.external-subtitle {
+  background-color: #5a1457; /* Setar a cor de fundo */
+  /* A ordem dos valores influencia, a ordem é: largura, cor e estilo. */
+  border: 3px solid #f30000;
+  /* 
+  Outra forma de escrever a propriedade border
+  border-width: 3px; 
+  border-color: #f30000;
+  border-style: solid; 
+  */
+
+  /* Tamanhos e medidas */
+  width: 300px; /* Setar a largura */
+  height: 100px; /* Setar a altura */
+
+  /* Margens */
+  /* Ao usar apenas um valor, ele se aplica a todos os lados. */
+  margin: 1rem;
+  /* Ao usar dois valores, o primeiro se aplica ao topo e ao fundo, e o segundo se aplica aos lados. */
+  margin: 2rem 1rem;
+  /* Ao usar três valores, o primeiro se aplica ao topo, o segundo se aplica ao lado esquerdo e direito, e o terceiro se aplica ao fundo. */
+  margin: 1rem 2rem 3rem;
+  /* Ao usar quatro valores, o primeiro se aplica ao topo, o segundo se aplica ao lado direito, o terceiro se aplica ao fundo e o quarto se aplica ao lado esquerdo. */
+  margin: 2rem 1rem 2rem 1rem;
+  /* Também é possível setar os valores de forma individual, como no exemplo abaixo: */
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+
+  /* Preenchimento */
+  padding: 3rem;
+}
