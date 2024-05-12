@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Reset padrão disponibilizado por Eric Meyer, 
+para que os navegadores tenham um padrão de estilização. */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* seletor por tag */
 span {
   color: blue;
@@ -34,26 +85,28 @@ div span {
   color: blue;
 }
 
-/* ==================================================== */
-.title {
+/* ======================= Testando o CSS ============================= */
+* {
+  font-family: Arial, Helvetica, sans-serif; /* Setar a fonte padrão */
+  font-size: 18px; /* Setar o tamanho da fonte padrão */
+}
+
+.header{
+  background-color: #5a1457; /* Setar a cor de fundo */
   color: #f4bce0; /* Setar a cor do texto */
+  text-align: center;
+}
+
+h1.title {
   font-size: 32px; /* Setar o tamanho da fonte */
 }
 
-.subtitle {
-  color: #f4bce0;
-  font-size: 24px;
-}
-
-* {
-  font-family: Arial, Helvetica, sans-serif; /* Setar a fonte padrão */
-  font-size: 18px;
-  color: #fff;
+h3{
+  text-align: right;
 }
 
 /* Praticando CSS e suas propriedades */
 .external-subtitle {
-  background-color: #5a1457; /* Setar a cor de fundo */
   /* A ordem dos valores influencia, a ordem é: largura, cor e estilo. */
   border: 3px solid #f30000;
   /* 
@@ -64,8 +117,10 @@ div span {
   */
 
   /* Tamanhos e medidas */
-  width: 300px; /* Setar a largura */
-  height: 100px; /* Setar a altura */
+  /* Setar a largura e a altura */
+  width: 300px; 
+  height: 100px;
+  
 
   /* Margens */
   /* Ao usar apenas um valor, ele se aplica a todos os lados. */
@@ -84,4 +139,35 @@ div span {
 
   /* Preenchimento */
   padding: 3rem;
+
+  /* Alinhamento */
+  text-align: justify;
+}
+
+/* =====================Testando o display flex========================== */
+.display-flex{
+  display: flex; /* Setar o display como flex */
+  justify-content: space-between; /* Alinhar os itens com espaço entre eles na horizontal */
+  align-items: center; /* Alinhar os itens ao centro na vertical */
+  margin-bottom: 20px;
+  height: 200px;
+  border: 2px solid #5a1457;
+}
+
+.display-flex .box{
+  border: 2px solid red;
+}
+
+.menu{
+  background-color: #681971;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 100vw;
+  top: 0px;
+}
+.menu .box{
+  border: 2px solid red;
+  padding: 10px;
 }
